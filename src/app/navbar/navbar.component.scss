@@ -3,6 +3,10 @@ nav{
     border-bottom: 2px solid rgb(70, 70, 70);
     border-right: 2px solid rgb(50, 50, 50);
     border-left: 2px solid rgb(50, 50, 50);
+
+    position: sticky;
+    top: 0px;
+    z-index: 100;
 }
 
 a{

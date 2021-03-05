@@ -1,7 +1,7 @@
 <app-navbar></app-navbar>
 
 <header>
-    <a href="index.html">
+    <a href="/">
         <img class="rounded-img" src="assets/img/logo.jpg" alt="logo" width="256px" style="border-radius: 50%;">
     </a>
     <h1>George Papadopoulos</h1>
@@ -40,7 +40,7 @@
             </p>
         </div>
     </div>
-    <div class="container">
+    <div id="skills" class="container">
         <div class="flex-left">
             <h3>Skill Set</h3>
             <p styke="text-align: right">
@@ -58,13 +58,15 @@
             </canvas>
         </div>
     </div>
-    <div id="projects">
-        <h3 class="middle">Projects</h3>
-        <p>So what can I do with all these technologies? Take a look</p>
-        <div id="projectsButtonsDiv" class="tab middle">
-            <button id="defaultOpenTab" class="tablink" onclick="openAllTabs(event)">All</button>
+    <div id="projects" class="container">
+        <div>
+            <h3>Projects</h3>
+            <p>So what can I do with all these technologies? Take a look</p>
+            <div id="projectsButtonsDiv" class="tab middle">
+                <button id="defaultOpenTab" class="tablink" onclick="openAllTabs(event)">All</button>
+            </div>
+            <div id="projects-container" style="height: 700px;"></div>
         </div>
-        <div id="projects-container" style="height: 700px;"></div>
     </div>
 </main>
 
