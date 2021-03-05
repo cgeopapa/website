@@ -12,7 +12,8 @@
         <div class="flex-left">
             <h3>About me</h3>
             <p>
-                I am a CS student at Athens University of Economics and Business.<br>
+                I am a graduate from Athens University of Economics and Business CS department.<br>
+                Currently at my Master degree on CyberSecurity at University of Piraeus.<br>
                 I love software development and everything that has to do with the process of turning an idea into
                 reality.<br>
             </p>
@@ -48,8 +49,13 @@
                 So these are my weapons and my proficiency/preference in them.
             </p>
         </div>
-        <div class="flex-right bar-container">
-            <canvas id="myChart" width="400" height="400"></canvas>
+        <div class="flex-right">
+            <canvas baseChart width="400" height="400"
+                [datasets]="radarChartData"
+                [options]="radarChartOptions"
+                [labels]="radarChartLabels"
+                [chartType]="radarChartType">
+            </canvas>
         </div>
     </div>
     <div id="projects">

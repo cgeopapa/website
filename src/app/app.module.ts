@@ -9,6 +9,8 @@ import { MatGridListModule } from "@angular/material/grid-list";
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatButtonModule} from '@angular/material/button';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ChartsModule } from 'ng2-charts';
+import {MatToolbarModule} from '@angular/material/toolbar'; 
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     FlexLayoutModule,
     MatButtonModule,
     FontAwesomeModule,
+    ChartsModule,
+    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
