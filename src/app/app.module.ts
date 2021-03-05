@@ -10,12 +10,15 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatButtonModule} from '@angular/material/button';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ChartsModule } from 'ng2-charts';
-import {MatToolbarModule} from '@angular/material/toolbar'; 
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatTabsModule} from '@angular/material/tabs';
+import { FooterComponent } from './footer/footer.component'; 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +30,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     FontAwesomeModule,
     ChartsModule,
     MatToolbarModule,
+    MatTabsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

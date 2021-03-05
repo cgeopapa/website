@@ -1,5 +1,4 @@
 <app-navbar></app-navbar>
-
 <header>
     <a href="/">
         <img class="rounded-img" src="assets/img/logo.jpg" alt="logo" width="256px" style="border-radius: 50%;">
@@ -62,12 +61,14 @@
         <div>
             <h3>Projects</h3>
             <p>So what can I do with all these technologies? Take a look</p>
-            <div id="projectsButtonsDiv" class="tab middle">
-                <button id="defaultOpenTab" class="tablink" onclick="openAllTabs(event)">All</button>
-            </div>
-            <div id="projects-container" style="height: 700px;"></div>
+            <mat-tab-group dynamicHeight>
+                <mat-tab label="All"> Content 1 </mat-tab>
+                <mat-tab label="Second"> Content 2 </mat-tab>
+                <mat-tab label="Third"> Content 3 </mat-tab>
+            </mat-tab-group>
         </div>
     </div>
 </main>
+<app-footer></app-footer>
 
 <router-outlet></router-outlet>
