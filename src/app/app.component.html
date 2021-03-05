@@ -1,5 +1,65 @@
 <app-navbar></app-navbar>
 
-
+<header>
+    <a href="index.html">
+        <img class="rounded-img" src="assets/img/logo.jpg" alt="logo" width="256px" style="border-radius: 50%;">
+    </a>
+    <h1>George Papadopoulos</h1>
+    <h2>A Software Engineer</h2>
+</header>
+<main>
+    <div class="container">
+        <div class="flex-left">
+            <h3>About me</h3>
+            <p>
+                I am a CS student at Athens University of Economics and Business.<br>
+                I love software development and everything that has to do with the process of turning an idea into
+                reality.<br>
+            </p>
+        </div>
+        <div class="flex-right">
+            <h3>Where to find me</h3>
+            <p class="contact-item">
+                <a href="https://www.linkedin.com/in/george-papadopoulos-3a9072154/" target="_blank">
+                    <fa-icon [icon]="faLinkedIn"></fa-icon>
+                    LinkedIn
+                </a>
+            </p>
+            <p class="contact-item">
+                <a href="https://github.com/cgeopapa" target="_blank">
+                    <fa-icon [icon]="faGitHub"></fa-icon>
+                    GitHub
+                </a>
+            </p>
+            <p class="contact-item">
+                <a href="mailto:cgeopapa@gmail.com" target="_self">
+                    <fa-icon [icon]="faMail"></fa-icon>
+                    Email
+                </a>
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="flex-left">
+            <h3>Skill Set</h3>
+            <p styke="text-align: right">
+                Like every soldier who needs his weapons to go to war, <br>
+                every developer needs proficiency in different tools and technologies to make good software.<br>
+                So these are my weapons and my proficiency/preference in them.
+            </p>
+        </div>
+        <div class="flex-right bar-container">
+            <canvas id="myChart" width="400" height="400"></canvas>
+        </div>
+    </div>
+    <div id="projects">
+        <h3 class="middle">Projects</h3>
+        <p>So what can I do with all these technologies? Take a look</p>
+        <div id="projectsButtonsDiv" class="tab middle">
+            <button id="defaultOpenTab" class="tablink" onclick="openAllTabs(event)">All</button>
+        </div>
+        <div id="projects-container" style="height: 700px;"></div>
+    </div>
+</main>
 
 <router-outlet></router-outlet>

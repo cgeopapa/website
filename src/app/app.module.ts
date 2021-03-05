@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MatGridListModule } from "@angular/material/grid-list";
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatButtonModule} from '@angular/material/button';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import {MatButtonModule} from '@angular/material/button';
     MatGridListModule,
     FlexLayoutModule,
     MatButtonModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
