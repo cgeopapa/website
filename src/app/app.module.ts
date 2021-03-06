@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -15,6 +14,10 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProjectsTabsComponent } from './projects-tabs/projects-tabs.component';
+import { LiveProjectsComponent } from './live-projects/live-projects.component';
+import { MainComponent } from './main/main.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -22,6 +25,8 @@ import { ProjectsTabsComponent } from './projects-tabs/projects-tabs.component';
     NavbarComponent,
     FooterComponent,
     ProjectsTabsComponent,
+    LiveProjectsComponent,
+    MainComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +40,8 @@ import { ProjectsTabsComponent } from './projects-tabs/projects-tabs.component';
     MatToolbarModule,
     MatTabsModule,
     HttpClientModule,
+    MatCardModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
