@@ -1,6 +1,6 @@
-<h3>Projects</h3>
+<h3 id="projects">Projects</h3>
 <p>So what can I do with all these technologies? Take a look</p>
-<mat-tab-group dynamicHeight [backgroundColor]="backgroundColor" [color]="color">
+<mat-tab-group [backgroundColor]="backgroundColor" [color]="color" style="height: 40rem; overflow-y:hidden;">
     <mat-tab *ngFor="let lang of langs" label={{lang}}>
         <div *ngFor="let repo of repos">
             <div *ngIf="(repo.lang === lang) || lang === 'All'" fxLayoutAlign="center">

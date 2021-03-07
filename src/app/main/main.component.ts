@@ -32,7 +32,7 @@ export class MainComponent implements OnInit {
     scale:{
       ticks:{
           display:false,
-          suggestedMin: 5,
+          suggestedMin: 7,
           suggestedMax: 10,
           stepSize: 1,
       },
@@ -49,10 +49,10 @@ export class MainComponent implements OnInit {
       },
     }
   };
-  public radarChartLabels: Label[] = ["Java EE", "Python", "C# .NET", "JavaScript", "SQL", "Angular", "Git", "Kotlin", "React"];
+  public radarChartLabels: Label[] = ["Java EE", "Python", "C# .NET", "TypeScript", "SQL", "Angular", "Git", "Kotlin", "React"];
 
   public radarChartData: ChartDataSets[] = [
-    { data: [9.5, 9, 8, 9.5, 7.8, 9, 7.5, 8.5, 9.5],
+    { data: [9.8, 8.4, 8.8, 8.7, 9.2, 8.2, 9.4, 7.6, 8.5],
       borderColor: '#415bd1',
       borderWidth: 1,
       backgroundColor: '#0003',
