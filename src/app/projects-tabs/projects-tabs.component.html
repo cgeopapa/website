@@ -4,7 +4,7 @@
     <mat-tab *ngFor="let lang of langs" label={{lang}}>
         <div *ngFor="let repo of repos">
             <div *ngIf="(repo.lang === lang) || lang === 'All'" fxLayoutAlign="center">
-                <div fxLayout="row" fxLayoutAlign="space-between" class="project-container">
+                <div class="project-container">
                     <div style="text-align: left; padding-right: 2rem;">
                         <h4>{{repo.name}}</h4>
                         <p>{{repo.desc}}</p>

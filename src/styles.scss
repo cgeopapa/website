@@ -42,3 +42,9 @@ a{
 header, footer{
     background-color: rgb(35, 35, 35);
 }
+@media (max-width: 750px){
+    body{
+        margin: 0;
+    }
+}
+

@@ -22,6 +22,10 @@ p{
     width: 99%;
     padding: .8rem;
 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
     h4{
         font-size: 1.3rem;
     }
@@ -29,3 +33,20 @@ p{
         color: #999;
     }
 }
+
+@media (max-width: 750px){
+    .project-container{
+        border-bottom: 1px solid #522da870;
+        width: 99%;
+        padding: .8rem;
+        display: flex;
+        flex-direction: column;
+    
+        h4{
+            font-size: 1.3rem;
+        }
+        p{
+            color: #999;
+        }
+    }
+    }
