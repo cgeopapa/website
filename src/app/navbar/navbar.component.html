@@ -1,5 +1,5 @@
 <nav>
-    <div fxLayout="row" fxLayoutAlign="space-between">
+    <div fxLayout="row" fxLayoutAlign="space-between" *ngIf="!isMobile; else mobile">
         <div>
             <a class="nav-title" routerLink="/" mat-button>GEORGE PAPADOPOULOS</a>
         </div>
@@ -9,4 +9,21 @@
             <a routerLink="/live-projects" title="Projects you can run on your browser" mat-button>Live Projects</a>
         </div>
     </div>
+    <ng-template #mobile>
+        <div fxLayout="row" fxLayoutAlign="space-between">
+            <div>
+                <a class="nav-title" routerLink="/" mat-button><h3>GEORGE PAPADOPOULOS</h3></a>
+                <div class="navbar-new" [ngClass]="opened ? 'opened' : 'closed'">
+                    <a href="#skills" mat-button>Skill Set</a>
+                    <a href="#projects" mat-button>Projects</a>
+                    <a routerLink="/live-projects" title="Projects you can run on your browser" mat-button>Live Projects</a>    
+                </div>
+            </div>
+            <div class="mobile-menu">
+                <button mat-icon-button (click)="opened = !opened">
+                    <mat-icon>menu</mat-icon>
+                </button>
+            </div>
+        </div>
+    </ng-template>
 </nav>

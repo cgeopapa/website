@@ -11,6 +11,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ChartsModule } from 'ng2-charts';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTabsModule } from '@angular/material/tabs';
+import {MatSidenavModule} from '@angular/material/sidenav'; 
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProjectsTabsComponent } from './projects-tabs/projects-tabs.component';
@@ -42,6 +43,7 @@ import {MatIconModule} from '@angular/material/icon';
     HttpClientModule,
     MatCardModule,
     MatIconModule,
+    MatSidenavModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
